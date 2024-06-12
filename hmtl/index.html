@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="img">
+        <img src="../imagens/undraw_blooming_re_2kc4.svg" height="450px" width="450px" alt="">
+    </div>
+    <div class="Calculadora"> <!--  Define um contêiner principal para a calculadora. -->
+        <div class="resultado" id="resultado"></div> <!--Cria um elemento para mostrar os números e resultados da calculadora.-->
+        <div class="botaos"> <!-- Cria um contêiner para os botões da calculadora.-->
+            <button class="btn" onclick="clearDisplay()">C</button> <!-- Cria botões com a classe btn e adiciona um evento de clique para cada um. Os eventos chamam funções JavaScript para manipular a exibição e calcular os resultados.-->
+            <button class="btn" onclick="appendToDisplay('/')">÷</button>
+            <button class="btn" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" onclick="calculateSquareRoot()">√</button>
+            <button class="btn" onclick="calculatePower()">^</button>
+            <button class="btn" onclick="toggleMusic()">
+                <img src="../imagens/play_arrow_24dp_FILL0_wght400_GRAD0_opsz24.svg" height="20px" width="20px" alt="">
+            </button>
+            <button class="btn1" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <audio id="background-music" src="../imagens/videoplayback.m4a"></audio>
+    
+
+</body>
+</html>
